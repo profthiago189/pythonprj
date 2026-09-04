@@ -18,4 +18,25 @@ for NUM in range(1,11):
 status_servico = {
   'host': '8.8.8.8',
   'porta': '443',
+  'estado': 'aberta',
+  'servico': 'https',
 }
+
+print(status_servico['host'])
+print(status_servico['servico'])
+
+servicos = {
+        22: 'SSH',
+        80: 'HTTP',
+        443: 'HTTPS',
+        3306: 'MYSQL',
+}
+print(f'Com for aninhado')
+for PORTA in portas_alvo:
+        for SERV in servicos:
+                if PORTA == SERV:
+                        print(f' PORTA {PORTA}: Servico {SERV}')
+print(f'Com GET')
+for PORTA in portas_alvo:
+        NOME = servicos.get(PORTA, 'desconhecido')
+        print(f' PORTA {PORTA}: Servico {NOME}')
