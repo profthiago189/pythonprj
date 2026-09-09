@@ -39,4 +39,7 @@ for PORTA in portas_alvo:
 print(f'Com GET')
 for PORTA in portas_alvo:
         NOME = servicos.get(PORTA, 'desconhecido')
-        print(f' PORTA {PORTA}: Servico {SERV})
+        print(f' PORTA {PORTA}: Servico {NOME}')
+
+if __name__ == '__main__':
+	main()

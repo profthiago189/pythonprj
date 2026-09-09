@@ -1,0 +1,18 @@
+{
+    "alvo": "servidor-lab.interno",
+    "data_scan": "2026-09-09 19:43:44.598085",
+    "ip": "127.0.0.1",
+    "portas_abertas": [
+        22,
+        80,
+        443
+    ],
+    "servicos": {
+        "22": "SSH",
+        "80": "HTTP",
+        "443": "HTTPS"
+    },
+    "observacoes": [
+        "header CSP ausente na porta 80"
+    ]
+}

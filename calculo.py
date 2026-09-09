@@ -1,5 +1,10 @@
 #!/usr/bin/env  python3
 
+import sys
+sys.path.append("/home/admin/projetos/pythonprj")
+
+import servicos
+
 notas = []
 soma = 0
 
